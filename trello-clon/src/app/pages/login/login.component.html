@@ -1,25 +1,28 @@
-<div class="w-screen h-screen bg-gray-50 relative">
-  <div class="absolute w-full h-full">
+<div class="w-screen h-screen bg-white sm:bg-gray-50 relative">
+  <div class="absolute w-full h-full hidden sm:block">
     <img
-      class="absolute w-96 left-0 bottom-0"
+      loading="lazy"
+      class="absolute w-60 lg:w-96 left-0 bottom-0"
       src="../../../assets/svg/undraw_businessman_5ccp.svg"
       alt="bg left"
     />
     <img
-      class="absolute w-96 right-0 bottom-0"
+      loading="lazy"
+      class="absolute w-60 lg:w-96 right-0 bottom-0"
       src="/assets/svg/undraw_futuristic_interface_re_0cm6.svg"
       alt="bg left"
     />
   </div>
-  <div class="relative w-4/12 m-auto">
+  <div class="relative w-full sm:w-7/12 md:w-6/12 lg:w-4/12 m-auto">
     <header class="pt-6 pb-2 flex justify-center">
       <img
+        loading="lazy"
         class="w-56"
         src="../../../assets/images/logo/logo-gradient-blue-trello.png"
         alt="logo"
       />
     </header>
-    <div class="bg-white shadow drop-shadow-xl rounded py-4 px-6">
+    <div class="bg-white rounded shadow-none sm:shadow-lg py-4 px-6 md:px-10">
       <div class="mb-4">
         <h1 class="text-center font-semibold pt-4 pb-8">
           Iniciar sesión en Trello
@@ -41,38 +44,34 @@
           </div>
           <div>
             <button
-              class="text-white w-full font-medium rounded text-sm bg-green-500 px-5 py-2"
+              class="text-white w-full font-medium rounded text-sm bg-green-500 hover:bg-green-700 focus:ring-green-300 px-5 py-2"
               type="submit"
             >
               Continuar
             </button>
           </div>
         </form>
-        <div class="pt-8 pb-8">
-          <hr />
+        <hr class="my-4 border-b-1 border-r-gray-300" />
+        <div class="flex justify-center items-baseline gap-4 space-x-0 space-y-2 md:space-x-2 md:space-y-0">
+            <a routerLink="/forgot-password" class="text-blue-600 font-light">
+                ¿No puede iniciar sesión?
+            </a>
+            <span class="text-gray-500 hidden md:block">•</span>
+            <a routerLink="/register" class="text-blue-600 font-light mt-0">
+                Regístrese para crear una cuenta
+            </a>
+           
         </div>
-        <ul class="text-blue-500 text-center flex flex-col gap-1">
-          <li class="m-auto">
-            <a href="">¿No puede iniciar sesión?</a>
-          </li>
-          <li class="list-disc m-auto">
-            <a href="">Regístrese para crear una cuenta</a>
-          </li>
-        </ul>
-      </div>
     </div>
-    <div class="pt-8 pb-8">
-
-        <ul class="text-blue-500 text-sm text-center flex justify-center gap-8">
-          <li><a href="">Política de Privacidad</a></li>
-          <li class="list-disc">
-            <a href="">Condiciones del Servicio</a>
-          </li>
-        </ul>
-    </div>
-    <div class="pt-8 pb-8">
-        <hr />
-      </div>
-    
   </div>
+    <hr class="mt-10 border-b-1 border-r-gray-300" />
+
+    <div class="flex justify-center">
+      <img
+      loading="lazy"
+        class="w-56 mt-4"
+        src="../../../assets/images/logo/Atlassian/Atlassian Logo Horizontal/PNG/horizontal-logo-gradient-neutral-atlassian.png"
+        alt="logo"
+      />
+    </div>
 </div>
